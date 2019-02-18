@@ -81,7 +81,7 @@ void Init_cfnv() {
   VALUE cFnv = rb_define_class("CFnv", rb_cObject);
   /*fnv132 methodを定義*/
   rb_define_method(cFnv, "fnv132", fnv_fnv132, 1);
-  rb_define_method(cFnv, "fnv132", fnv_fnv1a32, 1);
-  rb_define_method(cFnv, "fnv132", fnv_fnv164, 1);
-  rb_define_method(cFnv, "fnv132", fnv_fnv1a64, 1);
+  rb_define_method(cFnv, "fnv1a32", fnv_fnv1a32, 1);
+  rb_define_method(cFnv, "fnv164", fnv_fnv164, 1);
+  rb_define_method(cFnv, "fnv1a64", fnv_fnv1a64, 1);
 }
