@@ -40,6 +40,42 @@ fnv_fnv1a32(VALUE self, VALUE arg) {
   return INT2FIX(hash);
 }
 
+fnv_fnv164(VALUE self, VALUE arg) {
+  char *str = NULL;
+  uint64_t offset_basis = 14695981039346656037U;
+  uint64_t cFNV_PRIME   = 1099511628211U;
+  uint64_t hash         = 0;
+  int i;
+
+  Check_Type(arg, T_STRING);
+  str = StringValuePtr(arg);
+  int len = strlen(str);
+  hash = offset_basis;
+  for (i = 0; i < len; i++) {
+    hash *= cFNV_PRIME;
+    hash ^= str[i];
+  }
+  return INT2FIX(hash);
+}
+
+fnv_fnv1a64(VALUE self, VALUE arg) {
+  char *str = NULL;
+  uint64_t offset_basis = 14695981039346656037U;
+  uint64_t cFNV_PRIME   = 1099511628211U;
+  uint64_t hash         = 0;
+  int i;
+
+  Check_Type(arg, T_STRING);
+  str = StringValuePtr(arg);
+  int len = strlen(str);
+  hash = offset_basis;
+  for (i = 0; i < len; i++) {
+    hash ^= str[i];
+    hash *= cFNV_PRIME;
+  }
+  return INT2FIX(hash);
+}
+
 void Init_fnv() {
   /*Fnv classを定義*/
   VALUE cFnv = rb_define_class("CFnv", rb_cObject);
