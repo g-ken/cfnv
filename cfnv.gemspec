@@ -6,14 +6,14 @@ require "c_fnv/version"
 Gem::Specification.new do |spec|
   spec.name          = "cfnv"
   spec.version       = CFnv::VERSION
-  spec.authors       = ["Riki Ueno"]
+  spec.authors       = ["g-ken"]
   spec.email         = ["31506@toyota.kosen-ac.jp"]
 
   spec.summary       = %q{fnv1 and fnv1a hash algo in C-Extentions.}
   spec.description   = %q{fnv1 and fnv1a hash algo in C-Extentions.}
   spec.homepage      = "https://github.com/g-ken/cfnv"
   spec.license       = "MIT"
-  spec.extensions    = %w[ext/c_fnv/extconf.rb]
+  spec.extensions    = %w[ext/cfnv/extconf.rb]
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

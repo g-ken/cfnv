@@ -1,5 +1,5 @@
-require "c_fnv/version"
-require "c_fnv/c_fnv"
+require "cfnv/version"
+require "cfnv/cfnv"
 
 class CFnv
   class Error < StandardError; end

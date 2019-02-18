@@ -76,7 +76,7 @@ fnv_fnv1a64(VALUE self, VALUE arg) {
   return INT2FIX(hash);
 }
 
-void Init_fnv() {
+void Init_cfnv() {
   /*Fnv classを定義*/
   VALUE cFnv = rb_define_class("CFnv", rb_cObject);
   /*fnv132 methodを定義*/
