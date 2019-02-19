@@ -22,7 +22,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+cfnv = CFnv.new
+```
+
+fnv132
+
+```ruby
+cfnv.fnv132(String)
+```
+
+fnv132
+
+```ruby
+cfnv.fnv1a32(String)
+```
+
+fnv64
+
+```ruby
+cfnv.fnv164(String)
+```
+
+fnv1a64
+
+```ruby
+cfnv.fnv1a64(String)
+```
 
 ## Development
 
@@ -41,4 +67,5 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the CFnv project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/c_fnv/blob/master/CODE_OF_CONDUCT.md).
+
 # cfnv
