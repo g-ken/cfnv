@@ -1,8 +1,11 @@
 # CFnv
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cfnv`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem is fnv1 and fnva1 hash algorithm C-Extension .
 
-TODO: Delete this and the text above, and describe your gem
+This one is 500 times faster than native ruby code .
+
+![gruff](https://user-images.githubusercontent.com/40693088/53032236-cfb34980-34b1-11e9-8a8c-fdcd92d86907.png "実行速度")
+
 
 ## Installation
 
